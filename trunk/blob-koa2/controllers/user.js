@@ -22,8 +22,8 @@ class UserController {
 
             if (existUser) {
                 // 反馈存在用户名
-                ctx.response.status = 403;
-                ctx.body = statusCode.ERROR_403('用户已经存在')
+                ctx.response.status = 200;
+                ctx.body = statusCode.SUCCESS_200('用户已经存在')
             } else {
                 console.log("进来");
                 // 加密密码
